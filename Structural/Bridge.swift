@@ -34,3 +34,10 @@ class App {
 
 let app = App()
 app.main()
+
+/*
+ Output:
+ CheapHeadphone playMid.
+ CheapHeadphone playBass.
+ CheapHeadphone playMid.
+ */

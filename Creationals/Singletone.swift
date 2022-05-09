@@ -29,3 +29,8 @@ class App {
 
 let app = App()
 app.main()
+
+/*
+ Output:
+ OK. Same instance here.
+ */

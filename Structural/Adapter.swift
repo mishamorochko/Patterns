@@ -31,3 +31,8 @@ class App {
 
 let app = App()
 app.main()
+
+/*
+ Output:
+ TwitterAuthSDK show auth.
+ */

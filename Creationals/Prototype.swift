@@ -22,3 +22,8 @@ let user2 = user1.copy() as! User
 
 user1.name = "Oleg"
 print(user2.name)
+
+/*
+ Output:
+ Mikhail
+ */

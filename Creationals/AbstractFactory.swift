@@ -115,3 +115,8 @@ class ApplicationConfigurator {
 let appConfig = ApplicationConfigurator()
 appConfig.main()
 
+/*
+ Output:
+ MACOSButton -> setTitleText()
+ MACOSLabel -> setText()
+ */

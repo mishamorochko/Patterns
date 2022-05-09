@@ -62,3 +62,9 @@ class App {
 
 let app = App()
 app.main()
+
+/*
+ Output:
+ FlyTransport deliver.
+ ItalianCoffee pour into cup.
+ */

@@ -157,3 +157,10 @@ class App {
 
 let app = App()
 app.main()
+
+/*
+ Output:
+ Main,Cheese
+ Main,Cheese,Main,Sause,Cheese,Chicken
+ Main,Cheese,Chicken
+ */
