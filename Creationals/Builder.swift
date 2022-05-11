@@ -136,6 +136,39 @@ final class PizzaDirector {
     }
 }
 
+class PizzaBuilderWithDotSyntax {
+    var parts: [String] = []
+
+    func addCheese() -> PizzaBuilderWithDotSyntax {
+        parts.append("Cheese")
+        return self
+    }
+
+    func addChicken() -> PizzaBuilderWithDotSyntax {
+        parts.append("Chicken")
+        return self
+    }
+
+    func addSause() -> PizzaBuilderWithDotSyntax {
+        parts.append("Sause")
+        return self
+    }
+
+    func addTomato() -> PizzaBuilderWithDotSyntax {
+        parts.append("Tomato")
+        return self
+    }
+
+    func addOnion() -> PizzaBuilderWithDotSyntax {
+        parts.append("Onion")
+        return self
+    }
+
+    func build() -> String {
+        return parts.joined(separator: ", ")
+    }
+}
+
 class App {
     func main() {
         // With Director
@@ -152,6 +185,15 @@ class App {
         builder2.addCheese()
         builder2.addChicken()
         print(builder2.getPizza().listOfParts())
+
+        // Version 2 with dot syntax
+        let pizzaBuilderWithDotSyntax = PizzaBuilderWithDotSyntax()
+            .addChicken()
+            .addTomato()
+            .addOnion()
+            .addSause()
+            .build()
+        print(pizzaBuilderWithDotSyntax)
     }
 }
 
@@ -163,4 +205,5 @@ app.main()
  Main,Cheese
  Main,Cheese,Main,Sause,Cheese,Chicken
  Main,Cheese,Chicken
+ Chicken, Tomato, Onion, Sause
  */
