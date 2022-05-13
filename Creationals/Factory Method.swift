@@ -47,16 +47,10 @@ class FlyTransport: Transport {
 class App {
     func main() {
         deliver(logistic: FlyLogistic())
-        getCoffee(coffeeShop: ItalianCoffeeShop())
     }
 
     private func deliver(logistic: Logistic) {
         logistic.createTransport().deliver()
-    }
-
-    private func getCoffee(coffeeShop: CoffeeShop) {
-        let coffee = coffeeShop.createCoffee()
-        coffee.pourIntoCup()
     }
 }
 
